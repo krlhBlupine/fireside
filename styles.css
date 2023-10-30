@@ -18,11 +18,23 @@
     background: var(--header);
     color: var(--main);
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     width: 100vw;
-    height: 86vh;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+.sides {
+    display: flex
+}
+
+.bar {
+    height: 130px;
+    flex-grow: 1;
+    background: var(--header);
 }
 
 header h1, header p {
@@ -39,6 +51,10 @@ header p {
 header h1 {
     margin-bottom: 0px;
     font-size: 2em;
+}
+
+header {
+    height: 130px;
 }
 
 nav {
@@ -64,19 +80,28 @@ nav button p {
 
 
 nav button:hover {
-    background: var(--main);
     cursor: pointer;
+    background: var(--light);
+    position: relative;  
+    box-shadow: 6px 7px 40px -4px 
+            rgba(0, 0, 0, 0.2); 
 }
 
-.circle {
-	position: absolute;
-    border: solid 1px #ccc;
-    background: #ccc;
-    width: 60px; 
-	height: 60px; 
-    border-radius: 50%;  
-    filter: blur(27px);
-}
+.btn span { 
+    position: absolute; 
+    border-radius: 50%; 
+    /* To make it round */
+    background-color: rgba(0, 0, 0, 0.3); 
+  
+    width: 100px; 
+    height: 100px; 
+    margin-top: -50px; 
+    /* for positioning */
+    margin-left: -50px; 
+  
+    animation: ripple 1s forwards; 
+    opacity: 0; 
+} 
 
 main {
     width: 100%;

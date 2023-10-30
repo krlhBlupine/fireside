@@ -1,5 +1,12 @@
-@keyframes ripple {
-    0% {
-        
-    }
-}
+@keyframes ripple { 
+    from { 
+        opacity: 1.5; 
+        transform: scale(0); 
+    } 
+  
+    to { 
+        opacity: .9; 
+        transform: scale(70);
+        filter: blur(15px); 
+    } 
+} 
