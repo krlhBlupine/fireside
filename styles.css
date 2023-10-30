@@ -1,22 +1,28 @@
 :root {
-    --bg: #272733;
+    --header: #272733;
+    --light: #efdfef;
     --main: #8b5df7; 
+    --accent1: #d85df7;
+    --accent2: #f78b5d;
     margin: 0;
     padding: 0;
+    background: var(--main)
+}
 
+* {
+    margin: 0;
 }
 
 
-
 .container {
-    background: var(--bg);
+    background: var(--header);
     color: var(--main);
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
     width: 100vw;
-    height: 100vh;
+    height: 86vh;
 }
 
 header h1, header p {
@@ -26,28 +32,50 @@ header h1, header p {
     text-align: center;
 }
 
+header p {
+    font-size: 1em;
+}
+
 header h1 {
     margin-bottom: 0px;
+    font-size: 2em;
 }
 
 nav {
-    width: 90%;
-    margin: 1rem auto;
-    max-width: 400px;
+    display: block;
+    width: 80%;
+    margin: .5rem auto;
+    max-width: 350px;
 }
 
 nav button {
     width: 100%;
-    height: 3rem;
-    border-radius: 7% / 15px;
-    font-size: 1.5em;
-    padding-bottom: 5px;
-    /*TODO: fix border colors*/
+    height: 2.5rem;
+    border-radius: 6% / 15px;
+    font-size: 2em;
+    border: 2px solid var(--accent1);
+    color: var(--header);
+    background: var(--light)
 } 
+
+nav button p {
+    margin-top: -5px;
+}
+
 
 nav button:hover {
     background: var(--main);
     cursor: pointer;
+}
+
+.circle {
+	position: absolute;
+    border: solid 1px #ccc;
+    background: #ccc;
+    width: 60px; 
+	height: 60px; 
+    border-radius: 50%;  
+    filter: blur(27px);
 }
 
 main {
