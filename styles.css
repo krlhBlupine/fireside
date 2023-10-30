@@ -1,0 +1,57 @@
+:root {
+    --bg: #272733;
+    --main: #8b5df7; 
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.container {
+    background: var(--bg);
+    color: var(--main);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+header h1, header p {
+    width: 100%;
+    padding: 0 0.2rem;
+    margin: 0 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0px;
+}
+
+nav {
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+nav button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 7% / 15px;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    /*TODO: fix border colors*/
+} 
+
+nav button:hover {
+    background: var(--main);
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: var(--main)
+}
