@@ -25,7 +25,10 @@ btn.onclick = function (e) {
     // Remove span after 0.3s 
     setTimeout(() => { 
         ripple.remove(); 
-    }, 5000); 
+    }, 5000);
+    
+    wait(500)
+    
 
 
 
