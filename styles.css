@@ -21,25 +21,20 @@ body {
     padding: 0;
     margin: 0 auto;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
-    max-width: 700px;
-}
-
-.sides {
-    display: flex
+    max-width: 600px;
 }
 
 .bar {
-    height: 18vh;
+    height: 111px;
     flex-grow: 1;
     background: var(--header);
 }
 
 header h1, header p {
     width: 100%;
-    padding: 0 0.2rem;
-    margin: 0 0;
+    margin: 1px 0;
     text-align: center;
 }
 
@@ -48,34 +43,40 @@ header p {
 }
 
 header h1 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-size: 2em;
 }
 
 header {
-    height: 18vh;
+    position: sticky;
+    height: 110px;
 }
 
 nav {
     display: block;
-    width: 80%;
-    margin: .5rem auto;
+    width: 20%;
+    margin: 0px auto;
+    padding: 3px;
     max-width: 350px;
+    max-height: 29px;
 }
 
 nav button {
     width: 100%;
-    height: 2.5rem;
+    height: 30px;
     border-radius: 6% / 15px;
     font-size: 60px;
     border: 2px solid var(--accent1);
     color: var(--header);
     background: var(--light);
     position: relative;
+    margin-bottom: 5px;
 } 
 
 .elipsis {
     width: 40px;
+    max-height: 10px;
+    max-width: 40px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -88,7 +89,8 @@ nav button {
     height: 10px;
     background: var(--header);
     border-radius: 40%;
-    position: relative;
+    max-width: 10px;
+    max-height: 10px;
 }
 
 nav button:hover {
@@ -115,16 +117,14 @@ nav button:hover {
 
 main {
     width: 100%;
-    height: 82vh;
+    height: 100%;
     background: var(--main);
-    margin-bottom: 0;
 }
 
 article {
     width: auto;
     flex-grow: 1;
-    margin-bottom: 0;
-    height: 100%
+    height: 100%;
 }
 
 
@@ -137,7 +137,7 @@ article {
     position: relative;
     z-index: 3;
     opacity: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 .flex {
@@ -145,24 +145,35 @@ article {
 }
 
 footer {
-    width: 100%;
+    width: calc(100% -1px);
     height: fit-content;
     background: var(--header);
     border: 1px solid white;
-    padding: 0;
+    padding: .5em 0 ;
+    max-height: 30px;
 }
 
 footer ul {
-    font-size: 15px;
     color: var(--light);
     height: 50%;
-    text-align: center;
     display: flex;
     gap: 6%;
-    margin: 0 10px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
 }
 
 li {
+    text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    font-size: 13px;
+}
+ 
+.pop {
+    color: black;
+}
+
+.focus p {
+    color: black;
 }

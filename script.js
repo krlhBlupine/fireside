@@ -27,9 +27,6 @@ btn.onclick = function (e) {
         ripple.remove(); 
     }, 5000);
     
+    $(".focus").load("./navigation.html") 
     wait(500)
-    
-
-
-
 }; 
